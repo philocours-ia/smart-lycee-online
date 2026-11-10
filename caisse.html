@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Caisse</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<h1>Caisse</h1>
+
+<div class="card">
+
+<form id="caisseForm">
+
+<select id="type">
+
+<option value="recette">
+Recette
+</option>
+
+<option value="depense">
+Dépense
+</option>
+
+</select>
+
+<input
+type="text"
+id="libelle"
+placeholder="Libellé">
+
+<input
+type="number"
+id="montant"
+placeholder="Montant">
+
+<button>
+Valider
+</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h3>Journal de Caisse</h3>
+
+<table>
+
+<thead>
+<tr>
+<th>Date</th>
+<th>Type</th>
+<th>Libellé</th>
+<th>Montant</th>
+</tr>
+</thead>
+
+<tbody id="journalCaisse">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="assets/js/caisse.js"></script>
+
+</body>
+</html>

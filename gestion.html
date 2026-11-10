@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Gestion des Élèves</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<h1>Gestion des Élèves</h1>
+
+<div class="card">
+
+<h3>Nouvel Élève</h3>
+
+<form id="eleveForm">
+
+<input type="text" id="matricule" placeholder="Matricule" required>
+
+<input type="text" id="nom" placeholder="Nom" required>
+
+<input type="text" id="prenom" placeholder="Prénom" required>
+
+<select id="classe">
+<option>Seconde</option>
+<option>Première</option>
+<option>Terminale</option>
+</select>
+
+<button type="submit">Enregistrer</button>
+
+</form>
+
+</div>
+
+<div class="card">
+<h3>Liste des élèves</h3>
+<table id="tableEleves">
+<thead>
+<tr>
+<th>Matricule</th>
+<th>Nom</th>
+<th>Prénom</th>
+<th>Classe</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+
+<script src="assets/js/eleves.js"></script>
+
+</body>
+</html>
